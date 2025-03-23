@@ -4,4 +4,4 @@ def multiply_list(numbers):
     return reduce(lambda x, y: x * y, numbers)
 
 nums = list(map(int, input().split()))
-print(multiply_list(nums)) 
+print(multiply_list(nums))

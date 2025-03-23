@@ -5,3 +5,4 @@ def square_generator(n):
 N = int(input("Enter a number: "))
 for i in square_generator(N):
     print(i, end=" ")
+    
