@@ -5,9 +5,6 @@ import sys
 pygame.init()
 pygame.mixer.init()
 
-pygame.mixer.music.load('sure_thing.mp3')
-pygame.mixer.music.play(-1)
-
 shirina, vysoto = 700,700
 screen = pygame.display.set_mode((shirina, vysoto))
 pygame.display.set_caption("Snack Game by Elya")
