@@ -1,4 +1,4 @@
-import pygame
+import pygame # type: ignore
 import random
 import sys
 import time
@@ -11,7 +11,7 @@ def connect_db():
     """Connect to PostgreSQL. Update credentials if needed."""
     return psycopg2.connect(
         host="localhost",
-        dbname="snake_db",  
+        dbname="snake",  
         user="nurdymbekelizat",
         password="87075171076e" 
     )
@@ -56,11 +56,10 @@ def save_progress(user_id, score, level):
             conn.commit()
     print(f"Progress saved: user_id={user_id}, score={score}, level={level}")
 
-"""
 def get_all_users():
     with psycopg2.connect(
         host="localhost",
-        dbname="snake_db",
+        dbname="snake",
         user="nurdymbekelizat",
         password="87075171076e"
     ) as conn:
@@ -71,7 +70,6 @@ def get_all_users():
                 print(f"ID: {user_id}, Username: {username}")
 
 get_all_users()
-"""
 
 #2. game 
 

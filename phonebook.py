@@ -7,7 +7,7 @@ def connect():
         host="localhost",
         dbname="phonebook",
         user="nurdymbekelizat",
-        password="87075171076e"  # change this
+        password="87075171076e"  
     )
 
 # === INSERT FROM CONSOLE ===
