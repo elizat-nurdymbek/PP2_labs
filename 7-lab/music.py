@@ -97,6 +97,11 @@ while not shart:
     pygame.display.flip()
     
     for event in pygame.event.get():
+        if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_LEFT:
+                next_music()
+        
+        
         if event.type == pygame.QUIT:
             shart = True
         if event.type == pygame.MOUSEBUTTONDOWN:

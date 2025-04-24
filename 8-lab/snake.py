@@ -86,7 +86,7 @@ while shart:
         pygame.draw.rect(screen, green, pygame.Rect(p[0], p[1], 10, 10))
     pygame.draw.rect(screen, red, pygame.Rect(food_pos[0], food_pos[1], 10, 10))
     
-    game_score_text = font.render(f"Your score: {game_score}",True,'white')
+    game_score_text = font.render(f"Score: {game_score}",True,'white')
     screen.blit(game_score_text,(20,20))
     pygame.display.update()
  
@@ -100,9 +100,7 @@ game_over_rectangle.center = (shirina / 2, vysoto / 2)
 screen.blit(game_over_text,game_over_rectangle)
 pygame.display.update()
 pygame.time.wait(4000)
-pygame.mixer 
-       
-            
+pygame.mixer          
 
 
 

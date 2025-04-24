@@ -100,7 +100,7 @@ class Coin(pygame.sprite.Sprite):
         self.types = [(yellow_coin, 1, 65),(blue_coin, 3, 25), (red_coin, 5, 10) ]
         self.image = None
         self.value = 0
-        self.spawn()
+        self.spawn() 
     
     def spawn(self):
         self.image, self.value, _ = random.choices(self.types, weights=[65, 25, 10])[0]
